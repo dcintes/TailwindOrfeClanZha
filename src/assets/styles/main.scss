@@ -15,15 +15,24 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Shojumaru&display=swap");
+
+@tailwind base;
+@tailwind components;
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "./layouts/_base";
+
+/**
+ * Componenets
+ */
+@import "./layouts/_utils";
+
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!

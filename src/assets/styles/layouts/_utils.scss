@@ -1,0 +1,7 @@
+.btn {
+  @apply bg-gold text-white font-shojumaru font-bold p-2 my-2 text-3xl shadow-md border-white border-2 w-60 rounded-md max-w-full text-center;
+}
+
+.text-border {
+  text-shadow: 2px 2px 0 rgb(56, 56, 56), -2px -2px 0 rgb(56, 56, 56);
+}

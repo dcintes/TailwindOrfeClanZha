@@ -30,8 +30,16 @@
 /**
  * Componenets
  */
-@import "./layouts/_utils";
 
+@import "./layouts/menu";
+@import "./layouts/navbar";
+@import "./layouts/card";
+@import "./layouts/pointlist";
+
+/*
+  * Utils
+  */
+@import "./layouts/_utils";
 @tailwind utilities;
 
 /**

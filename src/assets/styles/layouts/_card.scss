@@ -1,0 +1,26 @@
+/*
+<div class="card">
+  <img class="card__image">
+  <div class="card__body">
+    <h5 class="card__title">...</h5>
+    <h6 class="card__subtitle">...</h6>
+    <p class="card__description"></p>
+   </div>
+</div>
+*/
+
+.card {
+  @apply flex flex-col;
+}
+
+.card__body {
+  @apply text-center p-4 flex-1;
+}
+
+.card__title {
+  @apply text-xl;
+}
+
+.card__subtitle {
+  @apply py-2;
+}

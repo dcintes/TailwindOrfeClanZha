@@ -1,0 +1,22 @@
+/*
+<ul class="pointlist">
+  <li class="pointlist__item">
+    <div class="pointlist__point">...</div>
+    <div class="pointlist__content">
+      <div class="pointlist__title">...</div>
+      <p class="pointlist__description">...</p>
+    </div>
+  </li>
+*/
+
+.pointlist__item {
+  @apply flex items-start;
+}
+
+.pointlist__point {
+  @apply flex-shrink-0 text-3xl mr-4 w-10 h-10 flex justify-center items-center rounded-full;
+}
+
+.pointlist__title {
+  @apply text-3xl;
+}

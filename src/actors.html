@@ -12,8 +12,8 @@
 <body>
 
   <header>
-    <nav class="bg-red border-b-2 border-gold py-3">
-      <div class="container mx-auto flex justify-between">
+    <nav class="navbar bg-red border-b-2 border-gold">
+      <div class="navbar__container">
         <a href="./index.html" class="flex items-center text-white text-border font-shojumaru text-xl">
           <img src="./assets/images/logo.svg" alt="Logo imatge drag xines" class="h-10 mr-2">
           L'orfe de Zhao
@@ -31,15 +31,15 @@
         </button>
 
         <div id="menu-links" class="hidden md:flex items-center">
-          <ul class="flex items-center text-white gap-14 font-sans">
-            <li>
-              <a href="./actors.html">Actors</a>
+          <ul class="menu text-white gap-14 font-sans">
+            <li class="menu__item">
+              <a href="./actors.html" class="menu__item">Actors</a>
             </li>
-            <li>
-              <a class="opacity-50 hover:opacity-75" href="./blog.html">Blog</a>
+            <li class="menu__item">
+              <a class="menu__link opacity-50" href="./blog.html">Blog</a>
             </li>
-            <li>
-              <a class="opacity-50 hover:opacity-75" href="#">Galeria</a>
+            <li class="menu__item">
+              <a class="menu__link opacity-50" href="#">Galeria</a>
             </li>
           </ul>
         </div>
@@ -53,83 +53,90 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor1.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">General Tu'an Gu</h5>
-            <h6 class="text-gold py-2">Caracalla Pylyp</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor1.png" alt="Caracalla Pylyp as General Tu'an Gu">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">General Tu'an Gu</h5>
+            <h6 class="card__subtitle text-gold">Caracalla Pylyp</h6>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Urna molestie at elementum eu facilisis sed odio.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor2.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">Minister Zhao Dun</h5>
-            <h6 class="text-gold py-2">Petar Riny</h6>
-            <p>Quis blandit turpis cursus in. Odio facilisis mauris sit amet massa vitae tortor
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor2.png" alt="Petar Riny as Minister Zhao Dun">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">Minister Zhao Dun</h5>
+            <h6 class="card__subtitle text-gold">Petar Riny</h6>
+            <p class="card__description">Quis blandit turpis cursus in. Odio facilisis mauris sit amet massa vitae
+              tortor
               condimentum. Gravida arcu ac tortor dignissim convallis aenean et tortor.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor3.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">General Zhao Shuo</h5>
-            <h6 class="text-gold py-2">Sipho Santos</h6>
-            <p>At volutpat diam ut venenatis tellus in metus vulputate eu. Vulputate sapien nec
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor3.png" alt="Sipho Santos as General Zhao Shuo">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">General Zhao Shuo</h5>
+            <h6 class="card__subtitle text-gold">Sipho Santos</h6>
+            <p class="card__description">At volutpat diam ut venenatis tellus in metus vulputate eu. Vulputate sapien
+              nec
               sagittis aliquam malesuada bibendum.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor4.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">Cheng Ying, the doctor</h5>
-            <h6 class="text-gold py-2">Liba Drago</h6>
-            <p>Et netus et malesuada fames ac turpis egestas. Lectus magna fringilla urna porttitor
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor4.png" alt="Liba Drago as Cheng Ying, the doctor">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">Cheng Ying, the doctor</h5>
+            <h6 class="card__subtitle text-gold">Liba Drago</h6>
+            <p class="card__description">Et netus et malesuada fames ac turpis egestas. Lectus magna fringilla urna
+              porttitor
               rhoncus dolor. Risus in hendrerit gravida rutrum quisque non tellus orci. </p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor5.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">General Han Jue</h5>
-            <h6 class="text-gold py-2">Narcisa Mitică</h6>
-            <p>Lorem mollis aliquam ut porttitor leo a. Pharetra diam sit amet nisl suscipit. Pulvinar
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor5.png" alt="Narcisa Mitică as General Han Jue">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">General Han Jue</h5>
+            <h6 class="card__subtitle text-gold">Narcisa Mitică</h6>
+            <p class="card__description">Lorem mollis aliquam ut porttitor leo a. Pharetra diam sit amet nisl suscipit.
+              Pulvinar
               etiam non quam lacus suspendisse.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor6.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">Minister Gongsun Chiujiu</h5>
-            <h6 class="text-gold py-2">Herakleides Anđa</h6>
-            <p>Orci sagittis eu volutpat odio facilisis mauris sit. Id velit ut tortor pretium viverra
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor6.png" alt="Herakleides Anđa as Minister Gongsun Chiujiu">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">Minister Gongsun Chiujiu</h5>
+            <h6 class="card__subtitle text-gold">Herakleides Anđa</h6>
+            <p class="card__description">Orci sagittis eu volutpat odio facilisis mauris sit. Id velit ut tortor pretium
+              viverra
               suspendisse potenti nullam ac. Aliquet enim tortor at auctor urna nunc.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor7.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">Cheng Bo, the orphan</h5>
-            <h6 class="text-gold py-2">Lallie Hyginos</h6>
-            <p>Eget lorem dolor sed viverra. Pellentesque elit eget gravida cum sociis natoque.
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor7.png" alt="Lallie Hyginos as Cheng Bo, the orphan">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">Cheng Bo, the orphan</h5>
+            <h6 class="card__subtitle text-gold">Lallie Hyginos</h6>
+            <p class="card__description">Eget lorem dolor sed viverra. Pellentesque elit eget gravida cum sociis
+              natoque.
               Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Scelerisque in dictum non consectetur
               a erat nam at.</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <img src="./assets/images/actor8.png" alt="...">
-          <div class="text-white text-center bg-red border-gold border-4 p-4 flex-1">
-            <h5 class="text-xl">Lady Zhuang</h5>
-            <h6 class="text-gold py-2">Egidio Funanya</h6>
-            <p>Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tortor at risus
+        <div class="card">
+          <img class="card__image" src="./assets/images/actor8.png" alt="Egidio Funanya as Lady Zhuang">
+          <div class="card__body border-4 chinese-canvas">
+            <h5 class="card__title">Lady Zhuang</h5>
+            <h6 class="card__subtitle text-gold">Egidio Funanya</h6>
+            <p class="card__description">Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tortor at
+              risus
               viverra adipiscing at. Lorem sed risus ultricies tristique nulla aliquet. Quam lacus suspendisse faucibus
               interdum posuere lorem.</p>
           </div>
@@ -140,47 +147,47 @@
   </main>
 
   <footer>
-    <nav>
-      <div class="container mx-auto flex justify-between py-4 mt-4 border-t-2 border-gold">
+    <nav class="navbar mt-8">
+      <div class="navbar__container border-t-2 border-gold">
         <a href="./index.html" class="flex items-center font-shojumaru text-xl class=" hover:text-gray-600"">
           <img src="./assets/images/logo.svg" alt="Logo imatge drag xines" class="h-10 mr-2">
           L'orfe de Zhao
         </a>
 
-        <ul class="flex flex-col md:flex-row items-center gap-8 font-sans">
-          <li>
-            <a href="./index.html" class="hover:text-gray-600">Portada</a>
+        <ul class="menu font-sans">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">Portada</a>
           </li>
-          <li>
-            <a href="./actors.html" class="hover:text-gray-600">Actors</a>
+          <li class="menu__item">
+            <a href="./actors.html" class="menu__link">Actors</a>
           </li>
-          <li>
-            <a href="./blog.html" class="hover:text-gray-600">Blog</a>
+          <li class="menu__item">
+            <a href="./blog.html" class="menu__link">Blog</a>
           </li>
-          <li>
-            <a href="#" class="hover:text-gray-600">Galeria</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Galeria</a>
           </li>
         </ul>
 
-        <ul class="flex flex-col md:flex-row items-center gap-8">
-          <li>
-            <a href="#" title="Enllaç a instagram" class="hover:text-gray-600">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" title="Enllaç a instagram" class="menu__link">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
                 <path
                   d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#" title="Enllaç a facebook" class="hover:text-gray-600">
+          <li class="menu__item">
+            <a href="#" title="Enllaç a facebook" class="menu__link">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
                 <path
                   d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#" title="Enllaç a twitter" class="hover:text-gray-600">
+          <li class="menu__item">
+            <a href="#" title="Enllaç a twitter" class="menu__link">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
                 <path
                   d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />

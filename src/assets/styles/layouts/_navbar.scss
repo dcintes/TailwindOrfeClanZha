@@ -1,0 +1,11 @@
+/*
+  <nav class="navbar">
+    <div class="navbar__container">
+      ...
+    </div>
+  </nav>
+*/
+
+.navbar__container {
+  @apply container mx-auto flex justify-between py-4;
+}

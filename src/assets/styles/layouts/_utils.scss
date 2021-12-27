@@ -5,3 +5,7 @@
 .text-border {
   text-shadow: 2px 2px 0 rgb(56, 56, 56), -2px -2px 0 rgb(56, 56, 56);
 }
+
+.chinese-canvas {
+  @apply text-white bg-red border-gold;
+}
